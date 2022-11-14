@@ -3,13 +3,16 @@ import java.util.Scanner;
 public class OperadorNao {
 
 	public static void main(String[] args) {
-		/*Crie um programa que permita que receba o tipo de um usuário em uma variável String e caso esse tipo NÃO SEJA "administrador", exibir a mensagem: "Atenção, usuário sem poderes administrativos. Algumas tarefas serão bloqueadas".*/
+		/*Crie um programa que permita que receba o tipo de um usuï¿½rio em uma variï¿½vel String e caso esse tipo Nï¿½O SEJA "administrador", exibir a mensagem: "Atenï¿½ï¿½o, usuï¿½rio sem poderes administrativos. Algumas tarefas serï¿½o bloqueadas".*/
 		Scanner leitor = new Scanner(System.in);
 		String tipoUsuario;
-		System.out.println("Por favor, digite seu tipo de usuário:");
+		System.out.println("Por favor, digite seu tipo de usuï¿½rio:");
 		tipoUsuario = leitor.next();
+		if (!tipoUsuario.equals("administrador")) {
+			System.out.println("AtenÃ§Ã£o, usuÃ¡rio sem poderes administrativos. Algumas tarefas serÃ£o bloqueadas");
+		}
 		
-		//Aqui é preciso criar um if que verifique se o tipo de usuário digitado é DIFERENTE de "administrador"
+		//Aqui ï¿½ preciso criar um if que verifique se o tipo de usuï¿½rio digitado ï¿½ DIFERENTE de "administrador"
 		
 		leitor.close();
 		
